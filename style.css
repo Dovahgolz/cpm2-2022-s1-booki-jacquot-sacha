@@ -51,9 +51,6 @@ header{
 .searchButton {
     color: rgb(255, 255, 255);
     float: right;
-    width: 75px;
-    height: 40px;
-    border-radius: 40%;
     background: #05017d;
     display: flex;
     justify-content: center;
