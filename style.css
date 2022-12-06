@@ -1,6 +1,4 @@
-/*************************/
-/* Styling Header */
-/*************************/
+
 header{
 	
 	overflow: hidden;
@@ -12,9 +10,7 @@ header{
 	height: 60px;
 }
 
-/****************/
-/* Styling Logo */
-/****************/
+
 #logo{
 	float: left;
 	padding: none;
@@ -29,47 +25,58 @@ header{
 	padding: 10px 0px;
 }
 
-/***************************/
-/* Styling Navigation Menu */
-/***************************/
-#menu{
-	float: right;
-	width: 70%;
-	height: 100%;
-	margin: none;
-}
-	
-#menu ul{
-	text-align: center;
-	float: right;
-	margin: none;
-	background: #0074D9;
-}
-	
-#menu li{
-	display: inline-block;
-	padding: none;
-	margin: none;
-}
-	
-#menu li a, #menu li span{
-	display: inline-block;
-	padding: 0em 1.5em;
-	text-decoration: none;
-	font-weight: 600;
-	text-transform: uppercase;
-	line-height: 60px;
-}
-	
-#menu li a{
-		
-	color: #FFF;
-}
-	
-#menu li:hover a, #menu li span{
-	background: #FFF;
-	color: #0074D9;
-	border-left: 1px solid #0074D9;
-	text-decoration: none;
+
+.searchBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%,50%);
+    background: #ffffff;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+
 }
 
+.searchBox:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+  background: rgb(26, 2, 105);
+  color : #0b066e;
+}
+
+.searchButton {
+    color: rgb(255, 255, 255);
+    float: right;
+    width: 75px;
+    height: 40px;
+    border-radius: 40%;
+    background: #05017d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: rgb(19, 3, 112);
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+}
+
+@media screen and (max-width: 620px) {
+.searchBox:hover > .searchInput {
+    width: 150px;
+    padding: 0 6px;
+}
